@@ -18,6 +18,7 @@
 		50A2E96A1E0BB2BD008FA697 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A2E9691E0BB2BD008FA697 /* SourceEditorCommand.m */; };
 		50A2E96E1E0BB2BD008FA697 /* MXFormatCode.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50A2E95E1E0BB2BD008FA697 /* MXFormatCode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		50A2E97E1E0CC7BA008FA697 /* HandleFormatCodeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A2E97D1E0CC7BA008FA697 /* HandleFormatCodeMethod.m */; };
+		50B0CDCA1E5E84C300D6A331 /* gif_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50B0CDC91E5E84C300D6A331 /* gif_animation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		50A2E96B1E0BB2BD008FA697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50A2E97C1E0CC7BA008FA697 /* HandleFormatCodeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleFormatCodeMethod.h; sourceTree = "<group>"; };
 		50A2E97D1E0CC7BA008FA697 /* HandleFormatCodeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleFormatCodeMethod.m; sourceTree = "<group>"; };
+		50B0CDC91E5E84C300D6A331 /* gif_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_animation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		50A2E94C1E0BB284008FA697 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50B0CDC81E5E84C300D6A331 /* IntoduceImages */,
 				50A2E94D1E0BB284008FA697 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -154,6 +157,14 @@
 				50A2E9641E0BB2BD008FA697 /* MXFormatCode.entitlements */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50B0CDC81E5E84C300D6A331 /* IntoduceImages */ = {
+			isa = PBXGroup;
+			children = (
+				50B0CDC91E5E84C300D6A331 /* gif_animation.gif */,
+			);
+			path = IntoduceImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			files = (
 				50A2E9501E0BB284008FA697 /* Assets.xcassets in Resources */,
 				503A2DF51E1265EC0010EF53 /* clang_format in Resources */,
+				50B0CDCA1E5E84C300D6A331 /* gif_animation.gif in Resources */,
 				50A2E9531E0BB284008FA697 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
