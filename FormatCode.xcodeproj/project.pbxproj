@@ -19,6 +19,7 @@
 		50A2E96E1E0BB2BD008FA697 /* MXFormatCode.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50A2E95E1E0BB2BD008FA697 /* MXFormatCode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		50A2E97E1E0CC7BA008FA697 /* HandleFormatCodeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A2E97D1E0CC7BA008FA697 /* HandleFormatCodeMethod.m */; };
 		50B0CDCA1E5E84C300D6A331 /* gif_animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50B0CDC91E5E84C300D6A331 /* gif_animation.gif */; };
+		50B0CDCC1E5E9E2400D6A331 /* transform_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 50B0CDCB1E5E9E2400D6A331 /* transform_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		50A2E97C1E0CC7BA008FA697 /* HandleFormatCodeMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleFormatCodeMethod.h; sourceTree = "<group>"; };
 		50A2E97D1E0CC7BA008FA697 /* HandleFormatCodeMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleFormatCodeMethod.m; sourceTree = "<group>"; };
 		50B0CDC91E5E84C300D6A331 /* gif_animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_animation.gif; sourceTree = "<group>"; };
+		50B0CDCB1E5E9E2400D6A331 /* transform_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transform_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				50B0CDC91E5E84C300D6A331 /* gif_animation.gif */,
+				50B0CDCB1E5E9E2400D6A331 /* transform_image.png */,
 			);
 			path = IntoduceImages;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				50A2E9501E0BB284008FA697 /* Assets.xcassets in Resources */,
 				503A2DF51E1265EC0010EF53 /* clang_format in Resources */,
 				50B0CDCA1E5E84C300D6A331 /* gif_animation.gif in Resources */,
+				50B0CDCC1E5E9E2400D6A331 /* transform_image.png in Resources */,
 				50A2E9531E0BB284008FA697 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

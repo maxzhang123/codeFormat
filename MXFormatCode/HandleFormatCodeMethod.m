@@ -268,7 +268,7 @@
     for (int i = 0; i < _allLinesCodeMArr.count; i++) {
         NSString *currentStr = [_allLinesCodeMArr objectAtIndex:i];
         NSString *newStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
-        if ([newStr hasPrefix:@"-("] || [newStr hasPrefix:@"+("])) {
+        if ([newStr hasPrefix:@"-("] || [newStr hasPrefix:@"+("]) {
             methodCount++;
         }
     }
