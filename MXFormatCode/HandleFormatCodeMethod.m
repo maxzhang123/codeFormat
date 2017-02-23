@@ -268,7 +268,7 @@
     for (int i = 0; i < _allLinesCodeMArr.count; i++) {
         NSString *currentStr = [_allLinesCodeMArr objectAtIndex:i];
         NSString *newStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
-        if ([newStr hasPrefix:@"-("]) {
+        if ([newStr hasPrefix:@"-("] || [newStr hasPrefix:@"+("])) {
             methodCount++;
         }
     }
@@ -285,16 +285,17 @@
         NSString *currentStr = [_allLinesCodeMArr objectAtIndex:i];
         NSString *newStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
         NSString *beforebeforeStr = nil;
-        if ([newStr hasPrefix:@"-("]) {
+        if ([newStr hasPrefix:@"-("] || [newStr hasPrefix:@"+("]) {
+            
+            NSLog(@"%@", newStr);
+            
             NSString *beforeStr = [_allLinesCodeMArr objectAtIndex:i-1];
             beforebeforeStr = [_allLinesCodeMArr objectAtIndex:i-2];
             if (![beforeStr isEqualToString:@"\n"] && ![beforeStr hasPrefix:@"//"]) {
                 [self mutableArrayInsertObject:@"\n" atIndex:i];
-                return;
             }
             if (![beforebeforeStr isEqualToString:@"\n"]) {
-                [self mutableArrayInsertObject:@"\n" atIndex:i-1];
-                return;
+                [self mutableArrayInsertObject:@"\n" atIndex:i];
             }
         }
     }
@@ -303,7 +304,7 @@
     for (int j = 0; j < _allLinesCodeMArr.count; j++) {
         NSString *currentStr = [_allLinesCodeMArr objectAtIndex:j];
         NSString *newStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
-        if ([newStr hasPrefix:@"-("]) {
+        if ([newStr hasPrefix:@"-("] || [newStr hasPrefix:@"+("]) {
             int k = j - 3;
             if (k >= 1) {
                 NSString *beforebeforeStr = _allLinesCodeMArr[k];
@@ -326,7 +327,7 @@
     for (int i = 0; i < _allLinesCodeMArr.count; i++) {
         NSString *currentStr = [_allLinesCodeMArr objectAtIndex:i];
         NSString *newCurrentStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
-        if ([newCurrentStr hasPrefix:@"-("]) {
+        if ([newCurrentStr hasPrefix:@"-("] || [newCurrentStr hasPrefix:@"+("]) {
             sumMethodCount ++;
         }
     }
@@ -338,7 +339,7 @@
         for (int i = methodStartIndex; i < _allLinesCodeMArr.count; i++) {
             NSString *currentStr = [_allLinesCodeMArr objectAtIndex:i];
             NSString *newCurrentStr = [currentStr stringByReplacingOccurrencesOfString:@" " withString:@""];
-            if ([newCurrentStr hasPrefix:@"-("]) {
+            if ([newCurrentStr hasPrefix:@"-("] || [newCurrentStr hasPrefix:@"+("]) {
                 k = i;
             }
             
@@ -376,6 +377,7 @@
         }
     }
 }
+
 
 
 
@@ -484,6 +486,7 @@
     [_allLinesCodeMArr removeObjectAtIndex:index];
     [_invocation.buffer.lines removeObjectAtIndex:index];
 }
+
 
 
 @end

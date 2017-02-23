@@ -57,7 +57,7 @@
     //处理NSTaggedPointerString 转化为NSString
     for (int i = 0; i < invocation.buffer.lines.count; i++) {
         id stringValue = [invocation.buffer.lines objectAtIndex:i];
-        id stringPointerValue = [stringValue mutableCopy];
+        NSString *stringPointerValue = [NSString stringWithFormat:@"%@",stringValue];
         [_allLinesCodeMArr addObject:stringPointerValue];
     }
     
