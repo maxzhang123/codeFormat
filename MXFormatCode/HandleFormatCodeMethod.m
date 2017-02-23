@@ -260,7 +260,6 @@
 }
 
 
-
 //处理每个方法前仅有2个换行  处理每个方法后仅有2个换行
 - (void)handleBeforeEveryMethodAndLaterEveryMethodHasOnlyTwoNewLine
 {
@@ -377,8 +376,6 @@
         }
     }
 }
-
-
 
 
 //处理@property属性申明时候的间距
